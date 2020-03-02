@@ -2,7 +2,7 @@
     require('connect.php');
 
     function getUser($conn) {
-        // validate that the post method is working form our Js file
+        // validate that the post method is orking form our Js file
 
         $username = $_POST["username"];
 
