@@ -1,4 +1,10 @@
-.user-message { margin: 0.25em 0 1em; }
+.row {
+    .col-sm-12{
+        h2 {
+            color: blue($color: #000000);
+        }
+    }
+}
 
 .card { 
     cursor: pointer;  
