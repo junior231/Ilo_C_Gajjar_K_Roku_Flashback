@@ -11,9 +11,9 @@ RokuFlashback is a streaming app dedicated to old movies, Music and TV-Shows.
 
 ## Built with
 * **HTML5**
-* **SASS/CSS3**
-* **JavaScript**
-* **MySQL**
+* **Gulp-SASS/CSS3**
+* **JavaScript, Vue.js, Node.js**
+* **MySQL, PHP**
 
 
 ## Workspaces (Designers)
@@ -29,4 +29,6 @@ RokuFlashback is a streaming app dedicated to old movies, Music and TV-Shows.
 * Icon made by [http://www.freepik.com] from www.flaticon.com
 
 ## Future Plans
-- Include more data in database
+- Include more data in database/API
+- Add More routes to enable more content and functionality.
+- Deploy App.
