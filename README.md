@@ -1,7 +1,7 @@
 
 # Roku FlashBack APP
 
-![RokuFlashback Logo]/images/flashback_logo.png)
+![RokuFlashback Logo](/images/flashback_logo.png)
 
 ## Let's take a Flashback!
 
