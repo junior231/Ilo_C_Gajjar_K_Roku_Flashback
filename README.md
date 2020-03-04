@@ -13,7 +13,7 @@ RokuFlashback is a streaming app dedicated to old movies, Music and TV-Shows.
 * **HTML5**
 * **SASS/CSS3**
 * **JavaScript**
-**MySQL**
+* **MySQL**
 
 
 ## Workspaces (Designers)
