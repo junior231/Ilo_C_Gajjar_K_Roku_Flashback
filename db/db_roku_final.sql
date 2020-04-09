@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 09, 2020 at 11:14 PM
+-- Generation Time: Apr 09, 2020 at 11:45 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -64,6 +64,8 @@ CREATE TABLE IF NOT EXISTS `tbl_adult_music` (
   `music_name` varchar(200) NOT NULL,
   `music_artist` varchar(200) NOT NULL,
   `music_genre` varchar(50) NOT NULL,
+  `music_trailer` varchar(250) NOT NULL,
+  `music_cover` varchar(250) NOT NULL,
   PRIMARY KEY (`music_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
@@ -71,12 +73,12 @@ CREATE TABLE IF NOT EXISTS `tbl_adult_music` (
 -- Dumping data for table `tbl_adult_music`
 --
 
-INSERT INTO `tbl_adult_music` (`music_id`, `music_name`, `music_artist`, `music_genre`) VALUES
-(1, 'Rock Around The Clock', 'Bill Haley and His Comets', 'Rock and Roll'),
-(2, 'I Want To Hold Your Hand', 'The Beatles', 'Pop Rock'),
-(3, 'Don\'t Go Breaking My Heart', 'Elton John, Kiki Dee', 'Pop, Soft Rock'),
-(4, 'Sweet Child O\'Mine', 'Guns N\' Roses', 'Hard Rock'),
-(5, 'I Will Always Love You', 'Whitney Houston', 'Pop, Soul, R&B');
+INSERT INTO `tbl_adult_music` (`music_id`, `music_name`, `music_artist`, `music_genre`, `music_trailer`, `music_cover`) VALUES
+(1, 'Rock Around The Clock', 'Bill Haley and His Comets', 'Rock and Roll', 'rock_around.mp4', 'rock_around.jpg'),
+(2, 'I Want To Hold Your Hand', 'The Beatles', 'Pop Rock', 'hold_your_hand.mp4', 'i_want_to.jpg'),
+(3, 'Don\'t Go Breaking My Heart', 'Elton John, Kiki Dee', 'Pop, Soft Rock', 'break_my_heart.mp4', 'breaking.jpg'),
+(4, 'Sweet Child O\'Mine', 'Guns N\' Roses', 'Hard Rock', 'sweet_child.mp4', 'sweetchild.jpg'),
+(5, 'I Will Always Love You', 'Whitney Houston', 'Pop, Soul, R&B', 'always_love_you.mp4', 'always_love.jpg');
 
 -- --------------------------------------------------------
 
@@ -92,6 +94,8 @@ CREATE TABLE IF NOT EXISTS `tbl_adult_tv` (
   `tv_cast` varchar(500) NOT NULL,
   `tv_rating` int(50) NOT NULL,
   `tv_release` int(50) NOT NULL,
+  `tv_trailer` varchar(250) NOT NULL,
+  `tv_cover` varchar(250) NOT NULL,
   PRIMARY KEY (`tv_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
@@ -99,12 +103,12 @@ CREATE TABLE IF NOT EXISTS `tbl_adult_tv` (
 -- Dumping data for table `tbl_adult_tv`
 --
 
-INSERT INTO `tbl_adult_tv` (`tv_id`, `tv_name`, `tv_writer`, `tv_cast`, `tv_rating`, `tv_release`) VALUES
-(1, 'I Love Lucy', 'Jess Oppenheimer, Madelyn Davis, Bob Carroll Jr.', 'Lucille Ball, Desi Arnaz, Vivian Vance, William Frawley, Richard Keith', 8, 1951),
-(2, 'The Andy Griffith Show', 'Sheldon Leonard, Aaron Ruben, Danny Thomas', 'Andy Griffith, Ron Howard, Don Knotts', 8, 1960),
-(3, 'M*A*S*H', 'Larry Gelbert', 'Alan Alda, Wayne Rogers, Loretta Swit', 8, 1972),
-(4, 'The A-Team', 'Stephen J. Cannell, Frank Lupo', 'George Peppard, Mr T., Dwight Schultz', 8, 1983),
-(5, 'Friends', 'David Crane, Martha Kauffman', 'Jennifer Aniston, Courtney Cox, Matthew Perry, Lisa Kudrow, David Schwimmer, Mall LeBlanc', 9, 1994);
+INSERT INTO `tbl_adult_tv` (`tv_id`, `tv_name`, `tv_writer`, `tv_cast`, `tv_rating`, `tv_release`, `tv_trailer`, `tv_cover`) VALUES
+(1, 'I Love Lucy', 'Jess Oppenheimer, Madelyn Davis, Bob Carroll Jr.', 'Lucille Ball, Desi Arnaz, Vivian Vance, William Frawley, Richard Keith', 8, 1951, 'long.mp4', 'ilovelucy.jpg'),
+(2, 'The Andy Griffith Show', 'Sheldon Leonard, Aaron Ruben, Danny Thomas', 'Andy Griffith, Ron Howard, Don Knotts', 8, 1960, 'andy_griffith.mp4', 'andygriffith.jpg'),
+(3, 'M*A*S*H', 'Larry Gelbert', 'Alan Alda, Wayne Rogers, Loretta Swit', 8, 1972, 'mash.mp4', 'mash.jpg'),
+(4, 'The A-Team', 'Stephen J. Cannell, Frank Lupo', 'George Peppard, Mr T., Dwight Schultz', 8, 1983, 'A_team.mp4', 'ateam.jpg'),
+(5, 'Friends', 'David Crane, Martha Kauffman', 'Jennifer Aniston, Courtney Cox, Matthew Perry, Lisa Kudrow, David Schwimmer, Mall LeBlanc', 9, 1994, 'friends.mp4', 'friends.jpg');
 
 -- --------------------------------------------------------
 
@@ -120,6 +124,8 @@ CREATE TABLE IF NOT EXISTS `tbl_kid_movies` (
   `movie_cast` varchar(500) NOT NULL,
   `movie_rating` int(50) NOT NULL,
   `movie_release` int(50) NOT NULL,
+  `movie_trailer` varchar(250) NOT NULL,
+  `movie_cover` varchar(250) NOT NULL,
   PRIMARY KEY (`movie_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
@@ -127,12 +133,12 @@ CREATE TABLE IF NOT EXISTS `tbl_kid_movies` (
 -- Dumping data for table `tbl_kid_movies`
 --
 
-INSERT INTO `tbl_kid_movies` (`movie_id`, `movie_name`, `movie_director`, `movie_cast`, `movie_rating`, `movie_release`) VALUES
-(1, 'Cinderella', 'Clyde Geronimi', 'Ilene Woods, Eleanor Audley, Verna Felton', 7, 1950),
-(2, 'The Jungle Book', 'Wolfgang Reitherman', 'Phil Harris, Sabastien Cabot, George Sanders', 8, 1967),
-(3, 'Willy Wonka and the Chocolate Factory', 'Mel Stuart', 'Gene Wilder, Jack Albertson, Peter Ostrum', 8, 1970),
-(4, 'E.T The Extra Terrestrial', 'Steven Spielberg', 'Henry Thomas, Drew Barrymore,Peter Coyote', 8, 1982),
-(5, 'Home Alone', 'Chris Columbus', 'Macauley Culkin, Joe Pesci, Daniel Stern', 8, 1990);
+INSERT INTO `tbl_kid_movies` (`movie_id`, `movie_name`, `movie_director`, `movie_cast`, `movie_rating`, `movie_release`, `movie_trailer`, `movie_cover`) VALUES
+(1, 'Cinderella', 'Clyde Geronimi', 'Ilene Woods, Eleanor Audley, Verna Felton', 7, 1950, 'cinderella.mp4', 'cinderella.jpg'),
+(2, 'The Jungle Book', 'Wolfgang Reitherman', 'Phil Harris, Sabastien Cabot, George Sanders', 8, 1967, 'jungle.mp4', 'jungleBook.jpg'),
+(3, 'Willy Wonka and the Chocolate Factory', 'Mel Stuart', 'Gene Wilder, Jack Albertson, Peter Ostrum', 8, 1970, 'chocolate_factory.mp4', 'willyWonka.jpg'),
+(4, 'E.T The Extra Terrestrial', 'Steven Spielberg', 'Henry Thomas, Drew Barrymore,Peter Coyote', 8, 1982, 'ET.mp4', 'e_t.jpg'),
+(5, 'Home Alone', 'Chris Columbus', 'Macauley Culkin, Joe Pesci, Daniel Stern', 8, 1990, 'homeAlone.mp4', 'homeAlone.jpg');
 
 -- --------------------------------------------------------
 
@@ -146,6 +152,8 @@ CREATE TABLE IF NOT EXISTS `tbl_kid_music` (
   `music_name` varchar(200) NOT NULL,
   `music_artist` varchar(200) NOT NULL,
   `music_genre` varchar(50) NOT NULL,
+  `musci_trailer` varchar(250) NOT NULL,
+  `music_cover` varchar(250) NOT NULL,
   PRIMARY KEY (`music_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
@@ -153,12 +161,12 @@ CREATE TABLE IF NOT EXISTS `tbl_kid_music` (
 -- Dumping data for table `tbl_kid_music`
 --
 
-INSERT INTO `tbl_kid_music` (`music_id`, `music_name`, `music_artist`, `music_genre`) VALUES
-(1, 'Witch Doctor', 'David Seville', 'Comedy, Rockabilly, Country'),
-(2, 'Good Vibration', 'The Beach Boys', 'Pychadelic Rock, Art Pop, Acid Rock, R&B'),
-(3, 'The Time Warp', 'Richard O\'Brien, Patricia Quinn, Nell Campbell, Charles Gray', 'Rock Musical'),
-(4, 'Ghostbusters', 'Ray Parker Jr.', 'Dance-Pop'),
-(5, 'Macarena', 'Los Del Rio', 'Dance-Pop');
+INSERT INTO `tbl_kid_music` (`music_id`, `music_name`, `music_artist`, `music_genre`, `musci_trailer`, `music_cover`) VALUES
+(1, 'Witch Doctor', 'David Seville', 'Comedy, Rockabilly, Country', 'witch_doctor.mp4', 'witch_doctor.jpg'),
+(2, 'Good Vibration', 'The Beach Boys', 'Pychadelic Rock, Art Pop, Acid Rock, R&B', 'good_vibrations.mp4', 'good_vibrations.jpg'),
+(3, 'The Time Warp', 'Richard O\'Brien, Patricia Quinn, Nell Campbell, Charles Gray', 'Rock Musical', 'time_warp.mp4', 'time_warp.jpg'),
+(4, 'Ghostbusters', 'Ray Parker Jr.', 'Dance-Pop', 'ghostbusters.mp4', 'ghost_busters.jpg'),
+(5, 'Macarena', 'Los Del Rio', 'Dance-Pop', 'macarena.mp4', 'macarena.jpg');
 
 -- --------------------------------------------------------
 
@@ -174,6 +182,8 @@ CREATE TABLE IF NOT EXISTS `tbl_kid_tv` (
   `tv_cast` varchar(500) NOT NULL,
   `tv_rating` int(50) NOT NULL,
   `tv_release` int(50) NOT NULL,
+  `tv_trailer` varchar(250) NOT NULL,
+  `tv_cover` varchar(250) NOT NULL,
   PRIMARY KEY (`tv_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
@@ -181,12 +191,12 @@ CREATE TABLE IF NOT EXISTS `tbl_kid_tv` (
 -- Dumping data for table `tbl_kid_tv`
 --
 
-INSERT INTO `tbl_kid_tv` (`tv_id`, `tv_name`, `tv_writer`, `tv_cast`, `tv_rating`, `tv_release`) VALUES
-(1, 'The Mickey Mouse Club', 'Hal Adelquist, Walt Disney', 'Jimmie Dodd, Tommy Cole, Eileen Diamond ', 8, 1955),
-(2, 'The Flinstones', 'Joseph Barbara, William Hanna', 'Alan Reed, Mel Blanc, Jean Vander Pyl', 8, 1960),
-(3, 'The Muppet Show', 'Jim Henson, Jack Burns', 'Jim Henson, Frank Oz, Richard Hunt', 8, 1976),
-(4, 'Inspector Gadget', 'Jean Chalopin, Andy Heyward, Bruno Bianchi', 'Don Adams, Holly Berger, Frank Welker', 7, 1983),
-(5, 'Barney & Friends', 'Dennis Deshazer, Sheryl Leach, Kathy Leach', 'Bob West, Julie Johnson, Dean Wendt', 4, 1992);
+INSERT INTO `tbl_kid_tv` (`tv_id`, `tv_name`, `tv_writer`, `tv_cast`, `tv_rating`, `tv_release`, `tv_trailer`, `tv_cover`) VALUES
+(1, 'The Mickey Mouse Club', 'Hal Adelquist, Walt Disney', 'Jimmie Dodd, Tommy Cole, Eileen Diamond ', 8, 1955, 'micky_mouse.mp4', 'mickey_mouse.jpg'),
+(2, 'The Flinstones', 'Joseph Barbara, William Hanna', 'Alan Reed, Mel Blanc, Jean Vander Pyl', 8, 1960, 'flinstones.mp4', 'flinstones.jpg'),
+(3, 'The Muppet Show', 'Jim Henson, Jack Burns', 'Jim Henson, Frank Oz, Richard Hunt', 8, 1976, 'muppet_show.mp4', 'muppet_show.jpg'),
+(4, 'Inspector Gadget', 'Jean Chalopin, Andy Heyward, Bruno Bianchi', 'Don Adams, Holly Berger, Frank Welker', 7, 1983, 'inspector_gadget.mp4', 'inspector_gadget.jpg'),
+(5, 'Barney & Friends', 'Dennis Deshazer, Sheryl Leach, Kathy Leach', 'Bob West, Julie Johnson, Dean Wendt', 4, 1992, 'barney.mp4', 'barney.jpg');
 
 -- --------------------------------------------------------
 
