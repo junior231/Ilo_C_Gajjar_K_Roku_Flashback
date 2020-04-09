@@ -4,7 +4,7 @@ class Database
     // Note: specify your own database credentials
     private $host = "localhost";
 
-    private $db_name = "db_roku_movies";
+    private $db_name = "db_roku_final";
 
     private $username = "root";
 
