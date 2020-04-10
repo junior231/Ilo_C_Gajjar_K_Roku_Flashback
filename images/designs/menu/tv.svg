@@ -1,0 +1,42 @@
+<svg id="television" xmlns="http://www.w3.org/2000/svg" width="46.743" height="46.743" viewBox="0 0 46.743 46.743">
+  <g id="Group_69" data-name="Group 69">
+    <g id="Group_68" data-name="Group 68">
+      <path id="Path_238" data-name="Path 238" d="M27.061,12.063A3.782,3.782,0,0,0,26.4,10.6l6.533-6.312a2.258,2.258,0,1,0-1.27-2.024,2.175,2.175,0,0,0,.221.948l-6.6,6.367a3.768,3.768,0,0,0-1.914-.543,3.608,3.608,0,0,0-1.417.285L15.615,3.2a2.206,2.206,0,0,0,.221-.948,2.264,2.264,0,1,0-2.264,2.273,2.191,2.191,0,0,0,.985-.239L20.675,10.2a3.733,3.733,0,0,0-.994,1.868H0V45.234H3.018v1.509H4.527V45.234h37.7v1.509h1.509V45.234h3.009V12.063ZM33.925,1.509a.755.755,0,1,1-.755.755A.758.758,0,0,1,33.925,1.509ZM13.572,3.018a.755.755,0,1,1,.755-.755A.758.758,0,0,1,13.572,3.018Zm9.8,7.536A2.262,2.262,0,0,1,25.5,12.063H21.255A2.242,2.242,0,0,1,23.371,10.554ZM45.234,43.725H1.509V13.572H45.234Z" fill="#af94c6"/>
+    </g>
+  </g>
+  <g id="Group_71" data-name="Group 71" transform="translate(4.518 16.581)">
+    <g id="Group_70" data-name="Group 70">
+      <path id="Path_239" data-name="Path 239" d="M77,180.2H52.873a3.778,3.778,0,0,0-3.773,3.773v16.581a3.778,3.778,0,0,0,3.773,3.773H77a3.778,3.778,0,0,0,3.773-3.773V183.973A3.778,3.778,0,0,0,77,180.2Zm2.264,20.354A2.262,2.262,0,0,1,77,202.817H52.873a2.262,2.262,0,0,1-2.264-2.264V183.973a2.262,2.262,0,0,1,2.264-2.264H77a2.262,2.262,0,0,1,2.264,2.264Z" transform="translate(-49.1 -180.2)" fill="#af94c6"/>
+    </g>
+  </g>
+  <g id="Group_73" data-name="Group 73" transform="translate(37.698 18.09)">
+    <g id="Group_72" data-name="Group 72">
+      <path id="Path_240" data-name="Path 240" d="M412.718,196.6a3.018,3.018,0,1,0,3.018,3.018A3.02,3.02,0,0,0,412.718,196.6Zm0,4.527a1.509,1.509,0,1,1,1.509-1.509A1.51,1.51,0,0,1,412.718,201.127Z" transform="translate(-409.7 -196.6)" fill="#af94c6"/>
+    </g>
+  </g>
+  <g id="Group_75" data-name="Group 75" transform="translate(37.698 25.635)">
+    <g id="Group_74" data-name="Group 74">
+      <path id="Path_241" data-name="Path 241" d="M409.7,278.6v7.536h6.027V278.6Zm4.518,6.027H411.2v-4.518h3.018Z" transform="translate(-409.7 -278.6)" fill="#af94c6"/>
+    </g>
+  </g>
+  <g id="Group_77" data-name="Group 77" transform="translate(38.453 34.68)">
+    <g id="Group_76" data-name="Group 76">
+      <rect id="Rectangle_1110" data-name="Rectangle 1110" width="1.509" height="1.509" fill="#af94c6"/>
+    </g>
+  </g>
+  <g id="Group_79" data-name="Group 79" transform="translate(41.461 34.68)">
+    <g id="Group_78" data-name="Group 78">
+      <rect id="Rectangle_1111" data-name="Rectangle 1111" width="1.509" height="1.509" fill="#af94c6"/>
+    </g>
+  </g>
+  <g id="Group_81" data-name="Group 81" transform="translate(38.453 37.698)">
+    <g id="Group_80" data-name="Group 80">
+      <rect id="Rectangle_1112" data-name="Rectangle 1112" width="1.509" height="1.509" fill="#af94c6"/>
+    </g>
+  </g>
+  <g id="Group_83" data-name="Group 83" transform="translate(41.461 37.698)">
+    <g id="Group_82" data-name="Group 82">
+      <rect id="Rectangle_1113" data-name="Rectangle 1113" width="1.509" height="1.509" fill="#af94c6"/>
+    </g>
+  </g>
+</svg>

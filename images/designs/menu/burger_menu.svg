@@ -1,0 +1,10 @@
+<svg id="Navigation_Bar" data-name="Navigation Bar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="43" viewBox="0 0 51 43">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="51" height="43" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Menu" clip-path="url(#clip-path)">
+    <path id="Menu-2" data-name="Menu" d="M0,43V36.856H31.877V43ZM0,24.572V18.428H51v6.144ZM0,6.144V0H51V6.144Z" fill="#6d3e98"/>
+  </g>
+</svg>
