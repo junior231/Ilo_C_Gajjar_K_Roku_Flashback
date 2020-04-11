@@ -1,4 +1,21 @@
+// .roku-jumbotron {
+//     color: #333;
+//     margin: 70px 30px 0 !important;
+// }
+
 .roku-jumbotron {
-    color: #333;
-    margin: 70px 30px 0 !important;
+    margin: 0 auto;
+    max-width: 720px;
+    color: $roku-purple;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 1.2;
+    padding: 2rem 1rem;
+    display: block;
+    // color: #333;
+    // margin: 150px 150px 0 !important;
+    background-color:rgba(212, 205, 205,0.8);
+    border-radius: .3rem;
+    margin-bottom: 150px;
 }

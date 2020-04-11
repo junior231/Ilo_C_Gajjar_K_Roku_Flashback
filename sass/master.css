@@ -272,8 +272,18 @@ footer ul li {
 }
 
 .roku-jumbotron {
-  color: #333;
-  margin: 70px 30px 0 !important;
+  margin: 0 auto;
+  max-width: 720px;
+  color: #6C3C97;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 2rem 1rem;
+  display: block;
+  background-color: rgba(212, 205, 205, 0.8);
+  border-radius: .3rem;
+  margin-bottom: 150px;
 }
 
 @media screen and (min-width: 768px) {

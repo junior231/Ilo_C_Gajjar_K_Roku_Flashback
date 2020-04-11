@@ -5,21 +5,21 @@ export default {
     <section>
         <div class="row">
             <div class="col-12 order-2 order-md-1 col-md-3 media-container">
-                <h4 class="media-title">{{currentMediaDetails.movies_title}}</h4>
-                <p class="media-details" v-html="currentMediaDetails.movies_storyline"></p>
-                <span class="media-time">{{currentMediaDetails.movies_runtime}}</span>
-                <span class="media-year">{{currentMediaDetails.movies_year}} </span>
+                <h4 class="media-title">{{currentMediaDetails.movies_name}}</h4>
+                <p class="media-details" v-html="currentMediaDetails.movie_cast"></p>
+                <span class="media-time">{{currentMediaDetails.movie_director}}</span>
+                <span class="media-year">{{currentMediaDetails.movies_release}} </span>
             </div>
 
             <div class="col-12 order-1 order-md-2 col-md-9 media-container">
-                <video autoplay controls muted :src="'video/' + currentMediaDetails.movies_trailer" class="fs-video"></video>
+                <video autoplay controls muted :src="'video/' + currentMediaDetails.movie_trailer" class="fs-video"></video>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 col-sm-9">
                 <div class="thumb-wrapper clearfix">
-                    <img v-for="item in allRetrievedVideos" :src="'images/' + item.movies_cover" alt="media-thumb" @click="loadNewMovie(item)" class="img-thumbnail rounded float-left rounded media-thumb">
+                    <img v-for="item in allRetrievedVideos" :src="'images/' + item.movie_cover" alt="media-thumb" @click="loadNewMovie(item)" class="img-thumbnail rounded float-left rounded media-thumb">
                 </div>
             </div>
         </div>

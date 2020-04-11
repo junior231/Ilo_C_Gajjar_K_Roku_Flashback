@@ -44,7 +44,7 @@ function login($username, $password, $ip){
             $user = array();
 
             $user['id'] = $found_user['user_id'];
-            $user['admin'] = $found_user['user_admin'];
+            $user['admin'] = $found_user['user_admins'];
             $user['avatar'] = $found_user['user_avatar'];
             $user['permissions'] = $found_user['user_permissions'];
             $user['uname'] = $found_user['user_name'];
