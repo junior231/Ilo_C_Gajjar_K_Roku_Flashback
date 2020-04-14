@@ -1,5 +1,4 @@
 .allUsers{
-    background-color: whitesmoke;
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 100px;
@@ -9,8 +8,11 @@
     animation: fadeAnim 1s 1 0s ease;
     
     h2{
+        background-color: $roku-purple;
         font-size: 35px;
-        color: $roku-purple;
+        padding: 1em;
+        // color: $roku-purple;
+        color: #ffffff;
         font-family: $main-font;
         font-weight: 400;
         font-style: normal; 
@@ -19,9 +21,12 @@
     }
 
     .usersCon{
+        // background: url(../images/home_background.jpg);
+        // background-blend-mode: multiply;
+        background-color: $roku-purple;
         max-width: 840px;
         margin: 0 auto;
-        // padding: 3em;
+        padding: 3em;
         display: grid;
         grid-gap: 2em;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -44,7 +49,7 @@
 
             h3{
                 font-size: 20px;
-                color: $roku-purple;
+                color: #ffffff;
                 font-family: $main-font;
                 font-weight: 400;
                 font-style: normal; 

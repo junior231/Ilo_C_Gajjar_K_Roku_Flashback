@@ -1,4 +1,6 @@
 #loginCon{
+    // background-blend-mode: multiply;
+    // background: url(../images/home_background.jpg);
     padding-top: 20px;
     animation: fadeAnim 1s 1 0s ease;
 
@@ -58,29 +60,29 @@
             height: 30px;
         }
 
-        .submitButton{
-            display: block;
-            margin: 0 auto;
-            // padding: 10px 20px 10px 20px;
-            margin-top: 40px;
-            width: 100%;
-            height: 40px;
-            background-color: #4a2b6b;
-            border: none;
-            border-radius: 2px;
-            font-size: 20px;
-            color: #ffffff;
-            font-family: $main-font;
-            font-weight: 400;
-            font-style: normal;
-            cursor: pointer;
-            transition: transform .3s;
+            .submitButton{
+                display: block;
+                margin: 0 auto;
+                // padding: 10px 20px 10px 20px;
+                margin-top: 40px;
+                width: 100%;
+                height: 40px;
+                background-color: #4a2b6b;
+                border: none;
+                border-radius: 2px;
+                font-size: 20px;
+                color: #ffffff;
+                font-family: $main-font;
+                font-weight: 400;
+                font-style: normal;
+                cursor: pointer;
+                transition: transform .3s;
 
-            &:hover{
-                transform: scale(1.03);
-            } 
+                &:hover{
+                    transform: scale(1.03);
+                } 
+            }
         }
-    }
     
     }
     

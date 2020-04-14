@@ -7,13 +7,13 @@ export default {
 		<h1 class="hidden">Adutls Profile</h1>
 
 		<div class="hero">
-			<img src="images/gunmetal.jpg" alt="Hero Banner" class="heroImage">
+			<img src="images/retro_bg_2.webp" alt="Hero Banner" class="heroImage">
 		</div>
 
 		<div class="filterButtonsCon">
 		<img src="images/adults_movies.png" class="filterButton" @click="fetchVideo()">
 		<img src="images/adults_series.png" class="filterButton" @click="fetchShows()">
-		<img src="images/adults_music.png" class="filterButton" @click="fetchMusic()">
+		<img src="images/music_icon.png" class="filterButton" @click="fetchMusic()">
 		</div>
 
 		<div v-if="showPlayer" class="playerCon" id="player">

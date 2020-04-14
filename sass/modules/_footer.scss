@@ -1,7 +1,8 @@
 footer{
-    background-color: #252941;
+    background-color: $roku-purple;
     margin-top: 0;
     padding: 1px;
+    border-top: solid 2px #ffffff;
     animation: fadeAnim 1s 1 0s ease;
 
     #footerCon{
