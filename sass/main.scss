@@ -1,0 +1,42 @@
+@import "_vars";
+@import "modules/_nav";
+@import "modules/_footer";
+@import "modules/_loginComponent";
+@import "modules/_users";
+@import "modules/_manageUsers";
+@import "modules/_profiles";
+@import "modules/_player";
+
+
+
+
+
+.hidden{
+    display: none;
+}
+
+body{
+    // background-color: $background_color;
+    // background-color: #ffffff;
+    background: url(../images/home_background.jpg);
+}
+
+@import url("https://use.typekit.net/itk1gfw.css");
+
+
+@keyframes fadeAnim{
+    0%{
+        opacity: 0;
+        }
+    100%{
+        opacity: 1;
+        }
+}
+
+.list-enter-active, .list-leave-active {
+    transition: all 1s;
+  }
+  .list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+    opacity: 0;
+    transform: translateY(30px);
+  }

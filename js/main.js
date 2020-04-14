@@ -1,26 +1,19 @@
 
-import AllUsersComponent from './components/AllUsersComponent.js';
-import LoginComponent from './components/LoginComponent.js';
-import UserHomeComponent from './components/UserHomeComponent.js';
+import router from "./components/Router.js";
+
 
 (() => {
-  let router = new VueRouter({
-    // set routes
-    routes: [
-      { path: '/', redirect: { name: "login" } },
-      { path: '/login', name: "login", component: LoginComponent },
-      { path: '/users', name: 'users', component: AllUsersComponent },
-      { path: '/userhome', name: 'home', component: UserHomeComponent, props: true }
-    ]
-  });
+
 
   const vm = new Vue({
+
     data: {
       authenticated: false,
       administrator: false,
+      showNav: false,
+      showFooter: false,
       user: [],
 
-      //currentUser: {},
     },
 
     methods: {
@@ -29,47 +22,94 @@ import UserHomeComponent from './components/UserHomeComponent.js';
         this.user = data;
       },
 
+      ShowNavigation(user){
+        this.user = user;
+        this.showNav = true;
+      },
+
       logout() {
         // push user back to login page
         this.$router.push({ name: "login" });
         this.authenticated = false;
 
-        if (localStorage.getItem("cachedUser")) {
+        if(localStorage.getItem("cachedUser")) {
           localStorage.removeItem("cachedUser");
         }
 
-        if (localStorage.getItem("cachedVideo")) {
+        if(localStorage.getItem("cachedVideo")){
           localStorage.removeItem("cachedVideo");
         }
+      },
+
+      checkFooter(){
+        if(this.$route.name === "kids" || this.$route.name === "adults" ){
+          this.showFooter = true;
+        } else {
+          this.showFooter = false;
+        }
       }
+
     },
 
-    created: function() {
-      // check for user in localstorage
-      // if we've logged in before, this will be here till we manually delete
+    updated: function(){
 
-      if (localStorage.getItem("cachedUser")) {
+      if (this.user.admin === 1 || this.user.admin === "1"){
+        this.administrator = true;
+      } else {
+        this.administrator = false;
+      }
+
+      if(this.$route.name === "users"){
+        this.showNav = false;
+      }
+
+      if(this.$route.name === "manageProfiles"){
+        this.showNav = true;
+      }
+
+      this.checkFooter();
+    },
+    
+    created: function(){
+      // check for a user in local storage
+      // if we've logged in before this will be here until we manually remove it
+
+      if(localStorage.getItem("cachedUser")) {
         let user = JSON.parse(localStorage.getItem("cachedUser"));
 
         this.authenticated = true;
-
-        this.$router.push({name: "home", params: {currentUser: user}});
-      } else {
-        this.$router.push({ name: "login"});
+        this.user = user;
+        this.showNav = true;
+      }else{
+        this.$router.push({ name: "login" }).catch(err => { });
+      }
+      
+      if (this.user.permissions === 1 || this.user.permissions === "1") {
+        this.$router.push({ name: "kids" }).catch(err => { });
+      }  else if (this.user.permissions > 1 || this.user.permissions > "1") {
+        this.$router.push({ name: "adults" }).catch(err => { });
+      }
+      
+      if (this.user.admin === 1 || this.user.admin === "1"){
+        this.administrator = true;
+        console.log("admin");
       }
 
-    },
+      this.checkFooter();
+
+  },
+
 
     router: router
   }).$mount("#app");
 
   router.beforeEach((to, from, next) => {
-    //console.log('router guard fired!', to, from, vm.authenticated);
-
+  
     if (vm.authenticated == false) {
       next("/login");
     } else {
       next();
     }
   });
+
 })();

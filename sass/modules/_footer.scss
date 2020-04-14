@@ -1,28 +1,61 @@
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    // line-height: 60px;
-    background-color: $dark-bg;
+footer{
+    background-color: #252941;
+    margin-top: 0;
+    padding: 1px;
+    animation: fadeAnim 1s 1 0s ease;
 
-    p { 
-        display: inline-block;
-        padding-left: 1em;
-        @include vertical-align();
+    #footerCon{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+
+        #footerLogo{
+            width: 130px;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        #socialMediaCon{
+            width: 150px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 25px;
+
+            .socialIcon{
+                width: 40px;
+                height: 40px;
+                transition: transform .3s;
+
+                &:hover{
+                    transform: scale(1.08);
+                }
+            }
+        }
+
+
+        #copyRight{
+            font-size: 20px;
+            color: #ffffff;
+            font-family: $main-font;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            margin-bottom: 25px;
+
+        }
     }
+  
+}
 
-	ul { 
-        list-style-type: none;
-        @include vertical-align();
-        margin-bottom: 0;
-        max-width: 95px;
+@media screen and (min-width: 700px){
+    #footerCon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
 
-		li {
-			font-size: 2.5em;
-			display: inline-block;
-			margin-right: 0.4em;
-			color: rgba(255, 255, 255, 0.3);
-		}
-	}
+    }
 }

@@ -1,30 +1,24 @@
 export default {
+    name: "LogIn",
+
     template: `
-        <div class="container">
-            <div class="jumbotron roku-jumbotron">
-                <h1 class="display-4">Welcome to Flashback!</h1>
-                <p class="lead">Before revisiting your favourite movies, tv shows or music from yesteryear, please log in with a valid username and password.</p>
-                <hr class="my-4">
-                <form>
-                    <div class="form-row align-items-center">
-                        <div class="col-md-3 my-1">
-                            <label class="sr-only" for="inlineFormInputName">Name</label>
-                            <input v-model="input.username" type="text" class="form-control" id="inlineFormInputName" placeholder="username" required>
-                        </div>
+    <div id="loginCon">
+        <div id="login">
+        <h2>Sign In</h2>
+            <form>
+                <h3 v-if="authenticationFailed" class="errorMsg">Authentication failed, please try again!</h3>
+                <h3 v-if="formFilled" class="errorMsg">A Username and Password Must Be Present</h3>
+                <label for="">Username</label>
+                <input type="text" name="username" v-model="input.username" placeholder="Username" required>
 
-                        <div class="col-md-3 my-1">
-                            <label class="sr-only" for="inlineFormPassword">Name</label>
-                            <input v-model="input.password" type="password" class="form-control" id="inlineFormPassword" placeholder="password" required>
-                        </div>
+                <label for="">Password</label>
+                <input type="password" name="password" v-model="input.password" placeholder="Password" required>
 
-                        <div class="col-auto my-1">
-                            <button v-on:click.prevent="login()" type="submit" class="btn btn-primary">Go!</button>
-                        </div>
-                    </div>
-                </form>            
-            </div>
+                <button v-on:click.prevent="login()" type="submit" class="submitButton">SIGN IN</button>
+            </form>
         </div>
-     `,
+    </div>
+    `,
 
     data() {
         return {
@@ -33,11 +27,15 @@ export default {
                 password: ""
             },
 
+            formFilled: false,
+            authenticationFailed: false
         }
     },
 
     methods: {
         login() {
+            this.authenticationFailed = false;
+            this.formFilled = false;   
 
             if (this.input.username != "" && this.input.password != "") {
                 // fetch the user from the DB
@@ -56,19 +54,26 @@ export default {
                     .then(res => res.json())
                     .then(data => {
                         if (typeof data != "object") { // means that we're not getting a user object back
-                            console.warn(data);
-                            // just for testing
-                            alert("authentication failed, please try again");
+                            //console.warn(data);
+
+                            this.input.username = "";
+                            this.input.password = "";
+                            this.authenticationFailed = true;
                         } else {
                             this.$emit("authenticated", true, data);
+                            this.formFilled = false;
                             this.$router.replace({ name: "users" });
+                            this.authenticationFailed = false;
+
                         }
                     })
                     .catch(function (error) {
                         console.log(error);
+
                     });
             } else {
-                console.log("A username and password must be present");
+
+                this.formFilled = true;
             }
         }
     }
