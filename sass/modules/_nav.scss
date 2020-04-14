@@ -1,4 +1,7 @@
 header{
+    
+    // background-color: $roku-purple;
+    
     padding-bottom: 30px;
 
     .headerCon{
@@ -8,13 +11,16 @@ header{
         padding-right: 20px;
         padding-top: 30px;
         display: flex;
+        margin-bottom: 20px;
 
         .logoCon {
+         
           width: 100px;
           height: 80px;
           padding: .5em .5em;
 
           #navLogo{
+            background-blend-mode: multiply;
             width: 100%;
             cursor: pointer;
             transition: transform .3s;
@@ -39,7 +45,7 @@ header{
 
                 a{
                     font-size: 20px;
-                    color: #ffffff;
+                    color: $roku-purple;
                     text-decoration: none;
                     font-family: $main-font;
                     font-weight: 400;

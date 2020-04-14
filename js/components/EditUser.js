@@ -6,7 +6,7 @@ export default {
     template: `
     <div class="editForm">
     
-        <h1>Eidt User</h1>
+        <h1>Edit User</h1>
 
  
             
@@ -31,13 +31,13 @@ export default {
 
                 <select v-model="input.avatar" id="avatar" required>
                     <option value="">Please choose an option</option>
-                    <option value="profile-leia.png">Leia</option>
-                    <option value="profile-dean.png">Dean</option>
-                    <option value="profile-spears.png">Spears</option>
-                    <option value="profile-kids-lisa.png">Lisa</option>
+                    <option value="harleyquinn.png">Harley Quinn</option>
+                    <option value="ironman.png">Ironman</option>
+                    <option value="count_olaf.jpg">Trevor</option>
+                    <option value="batman.png">Baby</option>
                 </select>
 
-                <label for="permissions">What Kind of Profile</label>
+                <label for="permissions">Type of Profile</label>
                 <select v-model="input.permissions" id="permission" required>
                     <option value="">Please choose an option</option>
                     <option value="3">Adult</option>
@@ -80,12 +80,11 @@ export default {
 
 	methods: {
         goBack(){
-            this.$router.push({ name: "manageUsers" });
+            this.$router.push({ name: "manageProfiles" });
         },
 
         editUser(){
             console.log('fired');
-            // this.$router.push({ name: "manageUsers" });
             if (this.input.username != "" && this.input.password != ""  && this.input.name != "" && this.input.email != "" && this.input.avatar != "" && this.input.permissions != "" && this.input.admin != ""){
 
                 let formData = new FormData();
@@ -112,7 +111,7 @@ export default {
 
                 });
 
-                this.$router.push({ name: "manageUsers" });
+                this.$router.push({ name: "manageProfiles" });
             } else {
                 this.formFilled = true;
             }

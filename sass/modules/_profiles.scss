@@ -1,14 +1,17 @@
 #KidsProfile{
-    background-color: #ffffff;
+    background-color: #fc78e6;
     padding-top: 1px;
     padding-bottom: 50px;
 }
 
 #AdultsProfile{
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
+    background-color: $roku-purple;    
 }
 
 .hero{
+    padding-top: 10px;
+    margin-top: 40px;
     max-width: 1400px;
     margin: auto;
     padding-left: 10px;
@@ -24,6 +27,7 @@
 }
 
 .filterButtonsCon{
+    background-blend-mode: darken;
     max-width: 1400px;
     margin: 0 auto;
     padding-left: 10px;
@@ -32,7 +36,7 @@
     animation: fadeAnim 1s 1 0s ease;
 
     .filterButton{
-        width: 100%;
+        // width: 100%;
         max-width: 450px;
         display: block;
         margin: 0 auto;

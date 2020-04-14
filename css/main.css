@@ -9,6 +9,7 @@ header .headerCon {
   padding-right: 20px;
   padding-top: 30px;
   display: flex;
+  margin-bottom: 20px;
 }
 header .headerCon .logoCon {
   width: 100px;
@@ -16,6 +17,7 @@ header .headerCon .logoCon {
   padding: 0.5em 0.5em;
 }
 header .headerCon .logoCon #navLogo {
+  background-blend-mode: multiply;
   width: 100%;
   cursor: pointer;
   transition: transform 0.3s;
@@ -34,7 +36,7 @@ header .headerCon nav ul li {
 }
 header .headerCon nav ul li a {
   font-size: 20px;
-  color: #ffffff;
+  color: #6C3C97;
   text-decoration: none;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 400;
@@ -63,9 +65,10 @@ header .headerCon #userCon .navButton:hover {
 }
 
 footer {
-  background-color: #252941;
+  background-color: #6C3C97;
   margin-top: 0;
   padding: 1px;
+  border-top: solid 2px #ffffff;
   animation: fadeAnim 1s 1 0s ease;
 }
 footer #footerCon {
@@ -185,7 +188,6 @@ footer #footerCon #copyRight {
 }
 
 .allUsers {
-  background-color: whitesmoke;
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 100px;
@@ -195,8 +197,10 @@ footer #footerCon #copyRight {
   animation: fadeAnim 1s 1 0s ease;
 }
 .allUsers h2 {
+  background-color: #6C3C97;
   font-size: 35px;
-  color: #6C3C97;
+  padding: 1em;
+  color: #ffffff;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -204,8 +208,10 @@ footer #footerCon #copyRight {
   margin-bottom: 10px;
 }
 .allUsers .usersCon {
+  background-color: #6C3C97;
   max-width: 840px;
   margin: 0 auto;
+  padding: 3em;
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -225,7 +231,7 @@ footer #footerCon #copyRight {
 }
 .allUsers .usersCon .user h3 {
   font-size: 20px;
-  color: #6C3C97;
+  color: #ffffff;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -234,7 +240,7 @@ footer #footerCon #copyRight {
 }
 
 .editForm {
-  background-color: #252941;
+  background-color: #6C3C97;
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 70px;
@@ -402,16 +408,19 @@ footer #footerCon #copyRight {
 }
 
 #KidsProfile {
-  background-color: #ffffff;
+  background-color: #fc78e6;
   padding-top: 1px;
   padding-bottom: 50px;
 }
 
 #AdultsProfile {
   padding-bottom: 50px;
+  background-color: #6C3C97;
 }
 
 .hero {
+  padding-top: 10px;
+  margin-top: 40px;
   max-width: 1400px;
   margin: auto;
   padding-left: 10px;
@@ -425,6 +434,7 @@ footer #footerCon #copyRight {
 }
 
 .filterButtonsCon {
+  background-blend-mode: darken;
   max-width: 1400px;
   margin: 0 auto;
   padding-left: 10px;
@@ -433,7 +443,6 @@ footer #footerCon #copyRight {
   animation: fadeAnim 1s 1 0s ease;
 }
 .filterButtonsCon .filterButton {
-  width: 100%;
   max-width: 450px;
   display: block;
   margin: 0 auto;
@@ -484,7 +493,7 @@ footer #footerCon #copyRight {
   }
 }
 .playerCon {
-  background-color: #252941;
+  background-color: #e6e7f0;
   padding-top: 40px;
   padding-bottom: 80px;
   animation: fadeAnim 1s 1 0s ease;
@@ -496,7 +505,7 @@ footer #footerCon #copyRight {
   margin: 0 auto;
 }
 .playerCon .player h2 {
-  color: #FFFFFF;
+  color: #6C3C97;
   font-size: 23px;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 400;
@@ -504,7 +513,7 @@ footer #footerCon #copyRight {
   margin-bottom: 10px;
 }
 .playerCon .player p {
-  color: #FFFFFF;
+  color: #6C3C97;
   font-size: 20px;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 400;
@@ -513,7 +522,7 @@ footer #footerCon #copyRight {
   max-width: 600px;
 }
 .playerCon .player .closePlayer {
-  color: #FFFFFF;
+  color: #6C3C97;
   margin-left: 90%;
   font-size: 30px;
   font-family: gill-sans-nova, sans-serif;
@@ -536,6 +545,7 @@ footer #footerCon #copyRight {
 
 body {
   background: url(../images/home_background.jpg);
+  backdrop-filter: blur(15px);
 }
 
 @keyframes fadeAnim {

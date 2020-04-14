@@ -15,10 +15,14 @@
     display: none;
 }
 
+
+
+
 body{
     // background-color: $background_color;
     // background-color: #ffffff;
     background: url(../images/home_background.jpg);
+    backdrop-filter: blur(15px)
 }
 
 @import url("https://use.typekit.net/itk1gfw.css");

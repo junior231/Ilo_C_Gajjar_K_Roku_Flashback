@@ -1,5 +1,5 @@
 .playerCon{
-    background-color: #252941;
+    background-color: #e6e7f0;
     padding-top: 40px;
     padding-bottom: 80px;
     animation: fadeAnim 1s 1 0s ease;
@@ -11,7 +11,7 @@
         margin: 0 auto;
 
         h2{
-            color: #FFFFFF;
+            color: $roku-purple;
             font-size: 23px;
             font-family: $main-font;
             font-weight: 400;
@@ -20,7 +20,7 @@
         }
 
         p{
-            color: #FFFFFF;
+            color: $roku-purple;
             font-size: 20px;
             font-family: $main-font;
             font-weight: 400;
@@ -30,7 +30,7 @@
         }
 
         .closePlayer{
-            color: #FFFFFF;
+            color: $roku-purple;
             margin-left: 90%;
             font-size: 30px;
             font-family: $main-font;

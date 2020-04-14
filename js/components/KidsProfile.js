@@ -6,13 +6,13 @@ export default {
     <div id="KidsProfile">
 		<h1 class="hidden">Kids Profile</h1>
 		<div class="hero">
-			<img src="images/kids_hero.jpg" alt="Kids Hero Banner" class="heroImage">
+			<img src="images/retro_bg_kids_2.jpg" alt="Kids Hero Banner" class="heroImage">
 		</div>
 
 		<div class="filterButtonsCon">
 			<img src="images/kids_movies.png" class="filterButton" @click="fetchVideo()">
 			<img src="images/kids_series.png" class="filterButton" @click="fetchShows()">
-			<img src="images/kids_music.png" class="filterButton" @click="fetchMusic()">
+			<img src="images/music_icon.png" class="filterButton" @click="fetchMusic()">
 		</div>
 
 		<div v-if="showPlayer" class="playerCon" id="player">
@@ -66,7 +66,7 @@ export default {
 		},
 
 		fetchShows() {
-			let url = './admin/index.php?kids=Shows';
+			let url = './admin/index.php?kids=TV';
 
 			fetch(url) 
 			.then(res => res.json())
