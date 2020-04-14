@@ -66,8 +66,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Login Credentials
 
-*Username - user1
-*password - Password
+* Username - user1
+* password - Password
 
 ## Video Folder
 
