@@ -72,7 +72,7 @@ export default {
 
 	methods: {
         navToUsers(){
-            this.$router.push({ name: "manageUsers" });
+            this.$router.push({ name: "manageProfiles" });
         },
 
         addUser(){
@@ -102,7 +102,7 @@ export default {
 
                 });
 
-                this.$router.replace({ name: "manageUsers" });
+                this.$router.replace({ name: "manageProfiles" });
             } else {
                 this.formFilled = true;
             }

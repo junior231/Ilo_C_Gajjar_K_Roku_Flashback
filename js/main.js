@@ -1,6 +1,8 @@
 
 import router from "./components/Router.js";
 
+// social media function - like, share or comment
+
 
 (() => {
 
@@ -113,3 +115,4 @@ import router from "./components/Router.js";
   });
 
 })();
+

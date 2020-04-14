@@ -10,9 +10,9 @@ export default {
 		</div>
 
 		<div class="filterButtonsCon">
-			<img src="images/kids_movies.png" class="filterButton" @click="fetchVideo()">
-			<img src="images/kids_series.png" class="filterButton" @click="fetchShows()">
-			<img src="images/music_icon.png" class="filterButton" @click="fetchMusic()">
+			<img src="images/movie.svg" class="filterButton" @click="fetchVideo()">
+			<img src="images/tv.svg" class="filterButton" @click="fetchShows()">
+			<img src="images/music.svg" class="filterButton" @click="fetchMusic()">
 		</div>
 
 		<div v-if="showPlayer" class="playerCon" id="player">

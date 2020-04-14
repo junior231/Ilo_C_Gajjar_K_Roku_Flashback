@@ -470,7 +470,7 @@ footer #footerCon #copyRight {
   height: 40px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #545f9a;
+  background-color: #4ef73f;
   border: none;
   border-radius: 2px;
   font-size: 20px;
@@ -491,7 +491,7 @@ footer #footerCon #copyRight {
 }
 
 .editForm form .editButtonsCon .cancelButton {
-  background-color: #9b5052;
+  background-color: #ff0000;
 }
 
 .conButtons {
@@ -507,7 +507,7 @@ footer #footerCon #copyRight {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 8px;
-  background-color: #545f9a;
+  background-color: #4ef73f;
   border: none;
   border-radius: 2px;
   font-size: 20px;
@@ -528,11 +528,11 @@ footer #footerCon #copyRight {
 }
 
 .conButtons .cancelButton {
-  background-color: #9b5052;
+  background-color: #ff0000;
 }
 
 #KidsProfile {
-  background-color: #fc78e6;
+  background-color: #ff62e5;
   padding-top: 1px;
   padding-bottom: 50px;
 }

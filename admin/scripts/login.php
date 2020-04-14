@@ -38,7 +38,7 @@ function login($username, $password, $ip){
 
             return json_encode($user);
         }else{
-            $message = 'Incorrect password';
+            $message = 'Wrong password';
             return json_encode($message);
         }
 

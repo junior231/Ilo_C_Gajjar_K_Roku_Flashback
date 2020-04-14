@@ -139,7 +139,7 @@
                 height: 40px;
                 padding-left: 10px;
                 padding-right: 10px;
-                background-color: #545f9a;
+                background-color: rgb(78, 247, 63);
                 border: none;
                 border-radius: 2px;
                 font-size: 20px;
@@ -156,7 +156,7 @@
             }
 
             .cancelButton{
-                background-color:#9b5052;
+                background-color:#ff0000;
             }
         }
     }
@@ -171,7 +171,7 @@
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 8px;
-        background-color: #545f9a;
+        background-color: rgb(78, 247, 63);
         border: none;
         border-radius: 2px;
         font-size: 20px;
@@ -188,6 +188,6 @@
     }
 
     .cancelButton{
-        background-color:#9b5052;
+        background-color:#ff0000;
     }
 }
