@@ -2,36 +2,53 @@
 header {
   padding-bottom: 30px;
 }
+
 header .headerCon {
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 header .headerCon .logoCon {
   width: 100px;
   height: 80px;
-  padding: 0.5em 0.5em;
+  padding: .5em .5em;
 }
+
 header .headerCon .logoCon #navLogo {
   width: 100%;
   cursor: pointer;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 header .headerCon .logoCon #navLogo:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
+
 header .headerCon nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 header .headerCon nav ul li {
   margin-left: 30px;
   margin-top: 10px;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
+
 header .headerCon nav ul li a {
   font-size: 20px;
   color: #ffffff;
@@ -39,35 +56,52 @@ header .headerCon nav ul li a {
   font-family: gill-sans-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 header .headerCon nav ul li a:hover {
   color: #bbbbba;
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
+
 header .headerCon #userCon {
   margin-left: auto;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 header .headerCon #userCon .navButton {
   width: 45px;
   height: 45px;
   margin-right: 8px;
   cursor: pointer;
-  animation: fadeAnim 1s 1 0s ease;
-  transition: transform 0.3s;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 header .headerCon #userCon .navButton:hover {
-  transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 footer {
   background-color: #252941;
   margin-top: 0;
   padding: 1px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 footer #footerCon {
   max-width: 1200px;
   margin: 0 auto;
@@ -75,27 +109,40 @@ footer #footerCon {
   padding-right: 20px;
   padding-top: 20px;
 }
+
 footer #footerCon #footerLogo {
   width: 130px;
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
 footer #footerCon #socialMediaCon {
   width: 150px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: 25px;
 }
+
 footer #footerCon #socialMediaCon .socialIcon {
   width: 40px;
   height: 40px;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 footer #footerCon #socialMediaCon .socialIcon:hover {
-  transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
+
 footer #footerCon #copyRight {
   font-size: 20px;
   color: #ffffff;
@@ -108,15 +155,25 @@ footer #footerCon #copyRight {
 
 @media screen and (min-width: 700px) {
   #footerCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
+
 #loginCon {
   padding-top: 20px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 #loginCon #login {
   background-color: #6C3C97;
   height: 400px;
@@ -127,6 +184,7 @@ footer #footerCon #copyRight {
   padding-right: 30px;
   border-radius: 5px;
 }
+
 #loginCon #login h2 {
   font-size: 35px;
   color: #ffffff;
@@ -134,6 +192,7 @@ footer #footerCon #copyRight {
   font-weight: 600;
   font-style: normal;
 }
+
 #loginCon #login .errorMsg {
   color: #a82f27;
   text-align: center;
@@ -142,8 +201,10 @@ footer #footerCon #copyRight {
   font-style: normal;
   font-size: 18px;
   margin-top: 15px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 #loginCon #login form label {
   font-size: 25px;
   color: #ffffff;
@@ -154,6 +215,7 @@ footer #footerCon #copyRight {
   margin-top: 40px;
   margin-bottom: 10px;
 }
+
 #loginCon #login form input {
   background: #ffffff;
   font-size: 20px;
@@ -163,6 +225,7 @@ footer #footerCon #copyRight {
   width: 100%;
   height: 30px;
 }
+
 #loginCon #login form .submitButton {
   display: block;
   margin: 0 auto;
@@ -178,10 +241,15 @@ footer #footerCon #copyRight {
   font-weight: 400;
   font-style: normal;
   cursor: pointer;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 #loginCon #login form .submitButton:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .allUsers {
@@ -192,8 +260,10 @@ footer #footerCon #copyRight {
   padding-bottom: 40px;
   margin-bottom: 40px;
   border-radius: 5px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 .allUsers h2 {
   font-size: 35px;
   color: #6C3C97;
@@ -203,26 +273,38 @@ footer #footerCon #copyRight {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .allUsers .usersCon {
   max-width: 840px;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   grid-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
 .allUsers .usersCon .user {
   width: 100%;
   max-width: 140px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 .allUsers .usersCon .user .avatar {
   max-width: 140px;
   cursor: pointer;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 .allUsers .usersCon .user .avatar:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
+
 .allUsers .usersCon .user h3 {
   font-size: 20px;
   color: #6C3C97;
@@ -243,8 +325,10 @@ footer #footerCon #copyRight {
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 5px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 .editForm h1 {
   font-size: 28px;
   color: #ffffff;
@@ -254,6 +338,7 @@ footer #footerCon #copyRight {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .editForm h2 {
   font-size: 23px;
   color: #ffffff;
@@ -263,12 +348,14 @@ footer #footerCon #copyRight {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .editForm img {
   display: block;
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 10px;
 }
+
 .editForm form {
   max-width: 350px;
   margin: 0 auto;
@@ -276,6 +363,7 @@ footer #footerCon #copyRight {
   padding-left: 15px;
   /* For IE <= 11 */
 }
+
 .editForm form .errorMsg {
   color: #a82f27;
   text-align: center;
@@ -284,8 +372,10 @@ footer #footerCon #copyRight {
   font-style: normal;
   font-size: 18px;
   margin-top: 15px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 .editForm form label {
   font-size: 20px;
   color: #ffffff;
@@ -296,6 +386,7 @@ footer #footerCon #copyRight {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
 .editForm form input {
   background: #ffffff;
   font-size: 18px;
@@ -304,6 +395,7 @@ footer #footerCon #copyRight {
   border-bottom: solid 1px #7E7E7E;
   width: 100%;
 }
+
 .editForm form select {
   width: 60%;
   height: 30px;
@@ -317,15 +409,19 @@ footer #footerCon #copyRight {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease, border-bottom-color 0.3s ease;
 }
+
 .editForm form select:hover, .editForm form select:focus {
   color: #ffffff;
   background-color: #090b17;
 }
+
 .editForm form select::-ms-expand {
   display: none;
 }
+
 .editForm form .submitButton {
   display: block;
   margin: 0 auto;
@@ -341,18 +437,29 @@ footer #footerCon #copyRight {
   font-weight: 400;
   font-style: normal;
   cursor: pointer;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 .editForm form .submitButton:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
+
 .editForm form .editButtonsCon {
   max-width: 300px;
   margin: 0 auto;
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 .editForm form .editButtonsCon .editButton {
   height: 40px;
   padding-left: 10px;
@@ -366,19 +473,30 @@ footer #footerCon #copyRight {
   font-weight: 400;
   font-style: normal;
   cursor: pointer;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 .editForm form .editButtonsCon .editButton:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
+
 .editForm form .editButtonsCon .cancelButton {
   background-color: #9b5052;
 }
 
 .conButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .conButtons .editButton {
   padding-left: 10px;
   padding-right: 10px;
@@ -392,11 +510,17 @@ footer #footerCon #copyRight {
   font-weight: 400;
   font-style: normal;
   cursor: pointer;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 .conButtons .editButton:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
+
 .conButtons .cancelButton {
   background-color: #9b5052;
 }
@@ -417,8 +541,10 @@ footer #footerCon #copyRight {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 20px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 .hero .heroImage {
   margin: 0 auto;
   width: 100%;
@@ -430,8 +556,10 @@ footer #footerCon #copyRight {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 24px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 .filterButtonsCon .filterButton {
   width: 100%;
   max-width: 450px;
@@ -439,10 +567,15 @@ footer #footerCon #copyRight {
   margin: 0 auto;
   margin-bottom: 10px;
   cursor: pointer;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 .filterButtonsCon .filterButton:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .mediaCon {
@@ -451,50 +584,70 @@ footer #footerCon #copyRight {
   margin-top: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  display: -ms-grid;
   display: grid;
   grid-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
+
 .mediaCon .mediaItem {
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 .mediaCon .mediaItem .thumbnail {
   max-width: 300px;
   width: 100%;
   cursor: pointer;
-  transition: transform 0.3s;
-  animation: fadeAnim 1.7s 1 0s ease;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-animation: fadeAnim 1.7s 1 0s ease;
+          animation: fadeAnim 1.7s 1 0s ease;
 }
+
 .mediaCon .mediaItem .thumbnail:hover {
-  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 @media screen and (min-width: 700px) {
   .filterButtonsCon {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .mediaCon {
+    display: -ms-grid;
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
   }
 }
+
 .playerCon {
   background-color: #252941;
   padding-top: 40px;
   padding-bottom: 80px;
-  animation: fadeAnim 1s 1 0s ease;
+  -webkit-animation: fadeAnim 1s 1 0s ease;
+          animation: fadeAnim 1s 1 0s ease;
 }
+
 .playerCon .player {
   max-width: 1200px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
 }
+
 .playerCon .player h2 {
   color: #FFFFFF;
   font-size: 23px;
@@ -503,6 +656,7 @@ footer #footerCon #copyRight {
   font-style: normal;
   margin-bottom: 10px;
 }
+
 .playerCon .player p {
   color: #FFFFFF;
   font-size: 20px;
@@ -512,6 +666,7 @@ footer #footerCon #copyRight {
   margin-bottom: 35px;
   max-width: 600px;
 }
+
 .playerCon .player .closePlayer {
   color: #FFFFFF;
   margin-left: 90%;
@@ -520,11 +675,16 @@ footer #footerCon #copyRight {
   font-weight: 400;
   font-style: normal;
   cursor: pointer;
-  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
+
 .playerCon .player .closePlayer:hover {
   color: #b8b8b8;
 }
+
 .playerCon .player video {
   max-width: 700px;
   width: 100%;
@@ -538,6 +698,15 @@ body {
   background: url(../images/home_background.jpg);
 }
 
+@-webkit-keyframes fadeAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeAnim {
   0% {
     opacity: 0;
@@ -546,13 +715,15 @@ body {
     opacity: 1;
   }
 }
+
 .list-enter-active, .list-leave-active {
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .list-enter, .list-leave-to {
   opacity: 0;
-  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
-
 /*# sourceMappingURL=main.css.map */

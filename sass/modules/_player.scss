@@ -1,0 +1,52 @@
+.playerCon{
+    background-color: #252941;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    animation: fadeAnim 1s 1 0s ease;
+
+    .player{
+        max-width: 1200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+
+        h2{
+            color: #FFFFFF;
+            font-size: 23px;
+            font-family: $main-font;
+            font-weight: 400;
+            font-style: normal; 
+            margin-bottom: 10px;
+        }
+
+        p{
+            color: #FFFFFF;
+            font-size: 20px;
+            font-family: $main-font;
+            font-weight: 400;
+            font-style: normal; 
+            margin-bottom: 35px;
+            max-width: 600px;
+        }
+
+        .closePlayer{
+            color: #FFFFFF;
+            margin-left: 90%;
+            font-size: 30px;
+            font-family: $main-font;
+            font-weight: 400;
+            font-style: normal; 
+            cursor: pointer;
+            transition: transform .3s;
+
+            &:hover{
+                color:rgb(184, 184, 184);
+            } 
+        }
+
+        video{
+            max-width: 700px;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+header{
+    padding-bottom: 30px;
+
+    .headerCon{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        display: flex;
+
+        .logoCon {
+          width: 100px;
+          height: 80px;
+          padding: .5em .5em;
+
+          #navLogo{
+            width: 100%;
+            cursor: pointer;
+            transition: transform .3s;
+
+            &:hover{
+                transform: scale(1.03);
+            } 
+          }
+        }
+
+     
+
+        nav{
+            ul{
+              display: flex;
+              animation: fadeAnim 1s 1 0s ease;
+
+              li{
+                  margin-left: 30px;
+                  margin-top: 10px;
+                  transition: all .3s ease-in;
+
+                a{
+                    font-size: 20px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-family: $main-font;
+                    font-weight: 400;
+                    font-style: normal;
+                    transition: transform .3s;
+
+                    &:hover{
+                      color: rgb(187, 187, 186);
+                      transform: scale(1.03);
+
+                    }
+                }
+
+            
+              }
+            }
+        }
+        
+
+        #userCon{
+          margin-left: auto;
+          cursor: pointer;
+          display: flex;
+
+          .navButton{
+            width: 45px;
+            height: 45px;
+            margin-right: 8px;
+            cursor: pointer;
+            animation: fadeAnim 1s 1 0s ease;
+            transition: transform .3s;
+
+            &:hover{
+                transform: scale(1.08);
+            }
+          }
+        }
+    }
+    
+}

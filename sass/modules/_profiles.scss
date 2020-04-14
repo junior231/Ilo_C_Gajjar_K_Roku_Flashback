@@ -1,0 +1,95 @@
+#KidsProfile{
+    background-color: #ffffff;
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+#AdultsProfile{
+    padding-bottom: 50px;    
+}
+
+.hero{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    animation: fadeAnim 1s 1 0s ease;
+
+    .heroImage{
+        // max-width: 1400px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.filterButtonsCon{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 24px;
+    animation: fadeAnim 1s 1 0s ease;
+
+    .filterButton{
+        width: 100%;
+        max-width: 450px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: transform .3s;
+
+        &:hover{
+            transform: scale(1.03);
+        } 
+    }
+
+}
+
+.mediaCon{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    // padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+    .mediaItem{
+        animation: fadeAnim 1s 1 0s ease;
+        .thumbnail{
+            max-width: 300px;
+            width: 100%;
+            cursor: pointer;
+            transition: transform .3s;
+            animation: fadeAnim 1.7s 1 0s ease;
+
+            &:hover{
+                transform: scale(1.03);
+            } 
+            
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 700px){
+    .filterButtonsCon{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .mediaCon{
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
