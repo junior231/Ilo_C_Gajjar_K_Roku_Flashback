@@ -53,7 +53,7 @@ We use Vue on the front end, but not the CLI or webpack - just Vue with ES6 modu
 
 ## Authors
 
-* **Collins Ilo - Lead Backend and Frontend Developer**
+* **Collins Ilo - Lead Backend and Lead Frontend Developer**
 * **Kahani Gajjar - Frontend Developer & Designer**
 
 ## License
