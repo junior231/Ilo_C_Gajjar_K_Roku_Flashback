@@ -63,3 +63,14 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Trevor Van Rys
+
+## Login Credentials
+
+*Username - user1
+*password - Password
+
+## Video Folder
+
+Due to the size of the video files it is not included in the repository, to download them here's the link
+
+* https://drive.google.com/file/d/1WtJLZYD0_wYpcxgHZjhi08KagU2gOO8z/view?usp=sharing
