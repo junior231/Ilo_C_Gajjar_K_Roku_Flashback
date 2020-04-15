@@ -1,5 +1,5 @@
 # Roku Flashback Project
-<img src="/images/Flashback_logo.svg" alt="Roku Flashback Logo" width="200">
+<img src="/images/flashback_logo.svg" alt="Roku Flashback Logo" width="200">
 
 ### Take a trip back to yesteryear with your old audio, tv and film faves!
 
