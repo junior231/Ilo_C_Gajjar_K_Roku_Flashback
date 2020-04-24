@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 13, 2020 at 10:40 PM
+-- Generation Time: Apr 24, 2020 at 03:31 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `tbl_media` (
 --
 
 INSERT INTO `tbl_media` (`ID`, `Title`, `Year`, `Cast`, `Media_type`, `Media_Rating`, `Media_source`, `Genre`, `Media_cover`) VALUES
-(1, 'Singin in the Rain', 1952, 'Gene Kelly, Donald O\'Connor, Debbie Reynolds', 'Movie', 'R', 'sing_in_rain.mp4', 'Musical, Romantic Comedy', 'Singin\'in_the_Rain.jpg'),
+(1, 'Singin in the Rain', 1952, 'Gene Kelly, Donald O\'Connor, Debbie Reynolds', 'Movie', 'R', 'sing_in_rain.mp4', 'Musical, Romantic Comedy', 'Singin\'_in_the_Rain'),
 (2, '2001 Space Odyssey', 1968, 'Keir Dullea, Gary Lockwood', 'Movie', 'R', 'odyssey.mp4', 'Science Fiction', 'spaceodyssey.jpg'),
 (3, 'The Godfather ', 1972, 'Marlon Brando, Al Pacino, James Caan, Richard Castellano, Robert Duvall', 'Movie', 'R', 'godfather.mp4', 'American Crime', 'thegodfather.jpg'),
 (4, 'Back to the Future', 1985, 'Michael J Fox, Christopher Lloyd, Lea Thompson, Crispin Glover', 'Movie', 'R', 'back_to_future.mp4', 'Science Fiction', 'backtothefuture.jpg'),
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
   `user_email` varchar(250) NOT NULL,
   `user_avatar` varchar(50) NOT NULL,
   `user_permissions` int(11) NOT NULL,
-  `user_admins` int(1) NOT NULL,
+  `user_admin` int(1) NOT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
@@ -101,11 +101,11 @@ CREATE TABLE IF NOT EXISTS `tbl_user` (
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_avatar`, `user_permissions`, `user_admins`) VALUES
-(1, 'Kahani', 'user1', 'password', 'me@you.com', 'null', 3, 1),
-(2, 'Collins', 'user2', 'password', 'me@you.com', 'null', 3, 1),
-(3, 'Little Kid', 'user3', 'password', 'me@you.com', 'null', 2, 0),
-(4, 'baby', 'user4', 'password', 'me@you.com', 'null', 1, 0);
+INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_avatar`, `user_permissions`, `user_admin`) VALUES
+(1, 'Kahani', 'user1', 'password', 'me@you.com', 'harleyquinn.png', 3, 1),
+(2, 'Collins', 'user2', 'password', 'me@you.com', 'ironman.png', 3, 1),
+(3, 'Trevor', 'user3', 'password', 'me@you.com', 'count_olaf.jpg', 2, 0),
+(4, 'baby', 'user4', 'password', 'me@you.com', 'batman.png', 1, 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
